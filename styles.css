@@ -68,9 +68,9 @@ section h2 {
 section h2:before {
     content: '';
     position: absolute;
-    width: 480px;
+    width: 100%;
     height: 3px;
-    background-color: #ff002b;
+    background-color: #161616;
     bottom: -5px;
     left: 0;
 }
@@ -258,10 +258,7 @@ section {
 /* Adicione esta regra CSS para empurrar o quadrado cinza para a direita */
 .content {
     margin-right: 10px; /* Ajuste conforme necessário para a quantidade desejada de margem */
-}
-/* Adicione esta regra CSS para empurrar o quadrado cinza para a direita */
-#sobre, #experiencia, #formação, #habilidades, #contato, #projetos {
-    margin-left: 10px; /* Ajuste conforme necessário para a quantidade desejada de margem */
+
 }
 /* Adicione esta regra CSS para alinhar habilidades e contato à esquerda */
 #contato .content {
