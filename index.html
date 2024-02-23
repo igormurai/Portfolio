@@ -1,0 +1,133 @@
+<title>Portfólio - Igor Murai</title>
+<link rel="stylesheet" href="styles.css">
+<head>
+    
+    <div id="relogio"></div>
+    <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+     
+<header>
+    <div class="logo">
+        <h1>Igor Murai</h1>
+        <p>Estágio em TI</p>
+        
+                <button id="modo-claro-escuro" onclick="toggleModoClaroEscuro()">&#128161;</button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#sobre"><i class="fas fa-user"></i> Sobre Mim</a></li>
+            <li><a href="#experiencia"><i class="fas fa-briefcase"></i> Experiência</a></li>
+            <li><a href="#formacao"><i class="fas fa-graduation-cap"></i> Formação</a></li>
+            <li><a href="#habilidades"><i class="fas fa-cogs"></i> Habilidades</a></li>
+            <li><a href="#contato"><i class="fas fa-address-book"></i> Contato</a></li>
+            <li><a href="#projetos"><i class="fas fa-laptop-code"></i> Projetos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="sobre" class="zoom highlight">
+    <div class="content hover-effect">
+        <h2>Sobre Mim</h2>
+        <p>Estou em busca de um estágio na área de Tecnologia da Informação para complementar minha formação em Bacharelado em Sistemas de Informação no IFC, com término previsto para 2026. Tenho interesse em desenvolver habilidades em desenvolvimento de software, ciência de dados, análise de sistemas e arquitetura de software, contribuindo para soluções inovadoras e adquirindo experiência prática nessas áreas.</p>
+    </div>
+</section>
+
+<section id="experiencia" class="zoom highlight">
+    <div class="content hover-effect">
+        <h2>Experiência Profissional</h2>
+        <h3>Assistente Administrativo</h3>
+        <p><strong>Realtec Engenharia LTDA</strong><br>2020 até 2022</p>
+        <p>Responsável pelo controle de documentos e processos administrativos, com habilidades em elaboração de planilhas, relatórios e apresentações no Office365. Demonstrada competência em organização, trabalho em equipe e gerenciamento do tempo.</p>
+    </div>
+</section>
+
+<section id="formação" class="zoom highlight">
+    <div class="content hover-effect">
+        <h2>Formação</h2>
+        <ul>
+            <li><h3>Técnico em Eletromecânica</h3>
+                <p><strong>SENAI</strong><br>2020 - 2021 (4 Semestres)</p></li>
+            <li><h3>Bacharelado em Sistemas de Informação</h3>
+                <p><strong>IFC</strong><br>2023 - 2026 (8 Semestres)</p></li>
+            <li><h3>Curso Santander Bootcamp - Ciência de Dados com Python</h3>
+                <p><strong>DIO</strong><br>2023 (89 Horas)</p></li>
+        </ul>
+    </div>
+</section>
+
+
+<section id="habilidades" class="zoom highlight">
+    <div class="content hover-effect">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML5 (Intermediário)</li>
+            <li>CSS3 (Intermediário)</li>
+            <li>Javascript (Intermediário)</li>
+            <li>CNH B (Definitivo)</li>
+            <li>Social Media (Avançado)</li>
+            <li>Inglês (Intermediário)</li>
+            <li>Adobe Lightroom Mobile (Avançado)</li>
+            <li>Python (Básico)</li>
+            <li>PowerBI (Intermediário)</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contato" class="zoom highlight">
+    <div class="content hover-effect">
+        <h2>Contato</h2>
+        <p><i class="fas fa-phone"></i> Telefone: 55 (47) 98901-2525</p>
+        <p><i class="fas fa-envelope"></i> Email: igorcerqueiramurai@gmail.com</p>
+        <p><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/igor-murai-6355a317a/" target="_blank">Linkedin</p>
+        <p><i class="fab fa-github"></i><a href="https://github.com/igormurai" target="_blank">Github</a></p>
+        <p><i class="fas fa-file-alt"></i><a href="https://lattes.cnpq.br/0574776909786375" target="_blank">Lattes</a></p>
+    </div>
+</section>
+
+<section id="projetos" class="zoom highlight">
+    <div class="content hover-effect">
+        <h2>Projetos</h2>
+
+        <ul>
+            <li><a target="_blank"><i class="fas fa-virus"></i> Análise da COVID-19 no Brasil (EM BREVE) </a></li>
+            <li><a target="_blank"><i class="fas fa-weight"></i> Calculadora de IMC (EM BREVE) </a></li>
+            <li><a target="_blank"><i class="fas fa-gamepad"></i> Jogo da Velha (EM BREVE) </a></li>
+            <li><a target="_blank"><i class="fas fa-globe"></i> Site Pessoal (EM BREVE) </a></li>
+        </ul>
+    </div>
+</section>
+    <script src="script.js"></script>
+    <script>
+        function atualizarRelogio() {
+            const agora = new Date();
+            const horas = agora.getHours().toString().padStart(2, '0');
+            const minutos = agora.getMinutes().toString().padStart(2, '0');
+            const segundos = agora.getSeconds().toString().padStart(2, '0');
+        
+            const relogio = document.getElementById('relogio');
+            relogio.textContent = `${horas}:${minutos}:${segundos}`;
+        }
+        
+        // Atualiza o relógio a cada segundo
+        setInterval(atualizarRelogio, 1000);
+        </script>
+        <script>
+            function atualizarRelogio() {
+                const agora = new Date();
+                const horas = agora.getHours().toString().padStart(2, '0');
+                const minutos = agora.getMinutes().toString().padStart(2, '0');
+                const segundos = agora.getSeconds().toString().padStart(2, '0');
+            
+                const relogio = document.getElementById('relogio');
+                relogio.textContent = `${horas}:${minutos}:${segundos}`;
+            }
+            
+            // Atualiza o relógio a cada segundo
+            setInterval(atualizarRelogio, 1000);
+            </script>
+</body>
+</html>
+
+

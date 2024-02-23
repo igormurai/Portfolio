@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bahnschrift', sans-serif;
+    background-color: rgb(0, 0, 0); 
+    color: #ffffff; 
+}
+
+header {
+    background: linear-gradient(to right, hwb(350 0% 39%), #dd0030); 
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: -2rem;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section {
+    padding: 2rem;
+    background-color: #333; 
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #ff0037; 
+    text-transform: uppercase; 
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+section h2:before {
+    content: '';
+    position: absolute;
+    width: 480px;
+    height: 3px;
+    background-color: #ff002b;
+    bottom: -5px;
+    left: 0;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+section#projetos,
+section#projeto-em-breve,
+section#em-breve-animation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#projeto-em-breve img {
+    max-width: 100px; 
+}
+
+section#em-breve-animation i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    animation: hammerAnimation 1s infinite;
+}
+
+@keyframes hammerAnimation {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.contact-row {
+    margin-bottom: 10px; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#experiencia h2,
+#formacao h2,
+#habilidades h2,
+#contato h2,
+#projeto h2 {
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+.content {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo {
+    text-align: right;
+}
+
+
+.title {
+    text-align: right;
+}
+.skill-level {
+    display: flex;
+}
+
+
+.skill-level {
+    display: flex;
+}
+#contato a[href^="https://linkedin.com/"] {
+    color: rgb(255, 0, 55);
+}
+#contato a[href^="https://github.com/"] {
+    color: rgb(255, 0, 55);
+}
+#contato a[href^="https://lattes.cnpq.br/"] {
+    color: rgb(255, 0, 55);
+}
+
+#contato p::before {
+    content: "\2022"; 
+    color: rgb(255, 0, 55); 
+    margin-right: 5px; 
+}
+
+#habilidades li::before {
+    content: "\2022"; 
+    color: rgb(255, 0, 55); 
+    margin-right: 10px; 
+}
+/* Adicione esta regra CSS para animação de escala nos quadrados cinza */
+.content:hover {
+    transform: scale(1.01); /* Ajuste o valor conforme necessário para a intensidade do zoom */
+    transition: transform 0.3s ease; /* Tempo e tipo de transição da animação */
+}
+/* Adicione esta regra CSS para rolagem suave ao clicar nas opções do menu */
+html {
+    scroll-behavior: smooth;
+}
+/* Adicione esta regra CSS para posicionar os quadrados conforme as instruções */
+section {
+    display: flex;
+    flex-wrap: wrap; /* Permite a quebra de linha quando o espaço é insuficiente */
+    justify-content: space-between; /* Distribui os itens uniformemente ao longo do contêiner */
+}
+
+#sobre {
+    order: 1; /* Define a ordem de exibição, o Sobre Mim fica na esquerda */
+}
+
+#experiencia {
+    order: 2; /* Experiência Profissional fica no meio */
+}
+
+#formação {
+    order: 3; /* Formação fica na direita */
+}
+
+#habilidades {
+    order: 4; /* habilidade embaixo de Sobre Mim */
+}
+
+#contato {
+    order: 5; /* Contato no meio */
+}
+
+#projeto {
+    order: 6; /* Projeto na esquerda */
+}
+/* Adicione estas regras CSS para posicionar os quadrados conforme as instruções */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribui os itens uniformemente ao longo do contêiner */
+}
+
+#sobre, #habilidades, #projetos {
+    width: 30%; /* Define a largura dos quadrados para ocupar 30% do contêiner */
+}
+
+#experiencia, #contato, #formação {
+    width: 30%; /* Define a largura dos quadrados para ocupar 30% do contêiner */
+}
+
+.content {
+    margin-bottom: 25px; /* Ajuste conforme necessário para o espaçamento entre os quadrados */
+}
+
+/* Adicione estas regras CSS para alinhar o texto à esquerda em habilidades e contato */
+#habilidades .content ul,
+#contato .content {
+    text-align: left;
+}
+/* Adicione esta regra CSS para empurrar o quadrado cinza para a direita */
+.content {
+    margin-right: 10px; /* Ajuste conforme necessário para a quantidade desejada de margem */
+}
+/* Adicione esta regra CSS para empurrar o quadrado cinza para a direita */
+#sobre, #experiencia, #formação, #habilidades, #contato, #projetos {
+    margin-left: 10px; /* Ajuste conforme necessário para a quantidade desejada de margem */
+}
+/* Adicione esta regra CSS para alinhar habilidades e contato à esquerda */
+#contato .content {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-right: 215; /* Remove a margem à esquerda para alinhar à borda esquerda */
+}
+
+/* Adicione esta regra CSS para alinhar habilidades e contato à esquerda */
+#habilidades .content {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-right: 230; /* Remove a margem à esquerda para alinhar à borda esquerda */
+}
+
+/* Estilo padrão (claro) */
+body {
+    background-color: #b8b8b8;
+    color: #ffffff;
+}
+
+/* Estilo para o modo escuro */
+body.modo-escuro {
+    background-color: #000000;
+    color: #fff;
+}
+
+body {
+    transition: background-color 0.6s ease, color 0.6s ease;
+    /* Restante do estilo padrão */
+}
+
+body.modo-escuro {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+#modo-claro-escuro {
+    transition: transform 0.6s ease;
+}
+
+function toggleModoClaroEscuro() {
+    const body = document.body;
+    body.classList.toggle('modo-escuro');
+
+    const botaoLampada = document.getElementById('modo-claro-escuro');
+    botaoLampada.classList.toggle('ligado');
+}
+
+#modo-claro-escuro.ligado {
+    transform: rotate(180deg);
+}
+/* Adicione uma classe para os itens de navegação */
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor escura ao passar o mouse */
+}
+
+/* Estilize os itens de navegação */
+.nav-item {
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicione uma transição suave */
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+}
+
+/* Adicione a classe aos itens de navegação existentes */
+#sobre:hover, #experiencia:hover, #formacao:hover, #habilidades:hover, #contato:hover, #projetos:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Adicione estilos para o relógio */
+#relogio {
+    position: absolute;
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+    right: 1768px; /* Ajuste a posição horizontal conforme necessário */
+    font-size: 20px;
+    color: #fff; /* Cor do relógio */
+    font-family: 'Bahnschrift', sans-serif; /* Escolha a fonte desejada */
+}
