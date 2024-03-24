@@ -1,0 +1,288 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte */
+body, h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: 'Bahnschrift Light', sans-serif;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    background-color: rgb(11, 11, 11);
+    color: #ffffff;
+}
+
+/* Estilos do cabeçalho (header) */
+header {
+    background: linear-gradient(to right, hwb(350 0% 39%), #dd0030);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /* Alinhado à direita */
+    align-items: center;
+    margin-bottom: 0.4cm;
+}
+
+/* Estilos do logo */
+.logo h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 1.2rem;
+    margin:0rem;
+}
+
+/* Estilos da navegação (nav) */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.118);
+}
+
+/* Estilos do nome e subtitulo na direita */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Estilos do botão da lâmpada */
+#modo-claro-escuro {
+    margin-top: 5px
+
+}
+
+/* Estilos das seções principais (main-section) */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 30%;
+    margin-bottom: 25px;
+}
+/* Estilos do título de cada seção */
+section h2 {
+    color: #ff002b;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* Linha abaixo do título */
+section h2:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #1e1e1e;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Estilos do texto nas seções */
+section p {
+    line-height: 1.6;
+}
+
+/* Estilos da lista de itens */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para a animação de rotação */
+@keyframes hammerAnimation {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Estilos para a animação de rotação */
+#em-breve-animation i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    animation: hammerAnimation 1s infinite;
+}
+
+/* Estilos para a animação de escala nos quadrados cinza */
+.hovered {
+    transform: scale(1.01);
+}
+
+
+/* Estilos para a transição suave ao clicar nas opções do menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para a posição do relógio */
+#relogio {
+    position: absolute;
+    top: 20px;
+    right: 55px;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Estilos para o modo claro e escuro */
+body {
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+body.modo-escuro {
+    background-color: #c9c6c6;
+    color: #ffffff;
+}
+
+#modo-claro-escuro {
+    transition: transform 0.3s ease;
+}
+
+
+/* Estilos para os itens de navegação */
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-item {
+    padding: 8px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Estilos para o nome e subtitulo na direita */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+/* Zoom botôes superiores */
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(1.3);
+}
+
+/* Estilos para a animação de escala nos quadrados cinza */
+.hovered {
+    transform: scale(1.05);
+}
+/* Estilos do texto nas seções */
+section p a {
+    color: #ff002b; /* Cor vermelha para links nas seções */
+}
+/* Estilos das seções principais (main-section) */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 30%;
+    margin-bottom: 25px;
+}
+
+/* Estilos do título de cada seção */
+section h2 {
+    color: #ff002b;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* Linha abaixo do título */
+section h2:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #1e1e1e;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Estilos do texto nas seções */
+section p {
+    line-height: 1.6;
+}
+
+/* Estilos da lista de itens */
+ul {
+    list-style: none;
+}
+
+/* Estilos dos itens da lista de habilidades */
+ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Adiciona bolinha vermelha ao lado esquerdo dos itens da lista */
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff002b;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
+/* Estilos dos quadrados cinza com efeito de zoom e hover */
+/* Estilos dos quadrados cinza com efeito de zoom e hover */
+.content {
+    padding: 4rem;
+    background-color: #1b1b1b;
+    border-radius: 25px;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.25, 1); /* Ajuste a função de transição para suavizar o início */
+    margin-left: 0.4cm;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative; /* Adicionando posição relativa */
+    transform-origin: center; /* Define o ponto de transformação no centro */
+    transform: scale(0.95); /* Define a escala inicial */
+}
+
+/* Quando o mouse está sobre o elemento, aplicamos a escala */
+.content:hover {
+    transform: scale(1.05);
+}
+
